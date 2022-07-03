@@ -1,0 +1,52 @@
+*
+    box-sizing: border-box
+
+body
+    height: 100vh
+    background: linear-gradient(to top left, #733cff, #0076ca)
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Roboto', sans-serif
+    -webkit-font-smoothing: antialiased
+
+a
+    transition-duration: .2s
+    text-decoration: none
+    color: inherit
+
+img
+    max-width: 100%
+
+input
+    height: 40px
+    width: 100%
+    padding-left: 1rem
+    font-weight: 700
+    font-size: 16px
+    background-color: $gray-light
+    border-radius: 10px
+    border: none
+
+button
+    width: 100%
+    height: 45px
+    font-size: 18px
+    font-weight: 700
+    cursor: pointer
+    background-color: $green-light
+    color: #fff
+    border-radius: 10px
+    border: 2px solid transparent
+    transition-duration: 0.3s
+    &:hover
+        border: 2px solid $green-dark
+    &:active
+        font-size: 16px
+        transition-duration: 0.1s
+        border: 4px solid $green-dark
+
+.flex-center
+    display: flex
+    justify-content: center
+    align-items: center

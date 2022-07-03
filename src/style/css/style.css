@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top left, #733cff, #0076ca);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  transition-duration: 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  padding-left: 1rem;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #a7a7a7;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #4acf6c;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition-duration: 0.3s;
+}
+button:hover {
+  border: 2px solid #004611;
+}
+button:active {
+  font-size: 16px;
+  transition-duration: 0.1s;
+  border: 4px solid #004611;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  padding: 50px 70px 120px 70px;
+  border-radius: 15px;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 50px;
+}
+.start-wrapper {
+  gap: 80px;
+  flex-direction: row;
+}
+
+.main-title {
+  cursor: default;
+  background: linear-gradient(135deg, #08b83d 20%, #0076ca 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+}
+.main-title:after {
+  content: "";
+  display: block;
+  height: 4px;
+  margin: auto;
+  width: 0;
+  -o-border-image: linear-gradient(135deg, #08b83d 20%, #0076ca 70%);
+     border-image: linear-gradient(135deg, #08b83d 20%, #0076ca 70%);
+  border-image-slice: 1;
+  background: linear-gradient(135deg, #08b83d 20%, #0076ca 70%);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.main-title:hover:after {
+  width: 100%;
+}
+
+.img-logo {
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form-log {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.forgot {
+  margin-top: 20px;
+  color: #a7a7a7;
+}
+.forgot-link {
+  color: #4e4e4e;
+}
+.forgot-link:hover {
+  color: #4acf6c;
+}
+
+.create-acc {
+  margin-top: 420px;
+  position: absolute;
+}
+.create-acc:hover {
+  color: #4acf6c;
+  font-size: 20px;
+}
